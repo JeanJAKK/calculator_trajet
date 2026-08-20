@@ -1,10 +1,11 @@
 from datetime import datetime as dt, time
 import vehicule
+import trajet
 
-historique = []
+historique : list[trajet] = []
 
 class trajet:
-  moyen_de_transport = object
+  moyen_de_transport = vehicule
   distance = 0
   heure = object
   prix = 0
@@ -14,6 +15,7 @@ class trajet:
     self.heure = self.set_heure_trajet()
 
     self.calculer_prix_trajet(v)
+    self.ajouter_a_historique(v)
     print(self.afficher_recapitulatif(v))
 
   def set_heure_trajet(self):
@@ -42,7 +44,7 @@ class trajet:
 
   def afficher_recapitulatif(self, v):
     return(f"""
-    Moyen de transport : {v.nom}
+    Moyen de transport : {self.moyen_de_transport}
     Distance du trajet : {self.distance}
     Heure de Pointe :    {"Oui" if self.est_heure_de_pointe() else "Non"}
     Prix du trajet :     {self.prix}
@@ -54,5 +56,5 @@ class trajet:
 
   def afficher_historique():
      for t in historique:
-        print(t.afficher_recapitulatif(self, v))
+        print(t.afficher_recapitulatif(t.moyen_de_transport))
     
