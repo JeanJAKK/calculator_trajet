@@ -6,7 +6,8 @@ while True:
   print("Choisir un moyen de transport\n")
   print("1. Zémidjan")
   print("2. Taxi")
-  print("3. Quitter")
+  print("3. Afficher historique")
+  print("4. Quitter")
   print("#" * 50 + "\n")
 
   try:
@@ -23,8 +24,9 @@ while True:
     trajet.trajet(distance_trajet, vh.zed)
   elif choix == 2:
     trajet.trajet(distance_trajet, vh.taxi)
-    
   elif choix == 3:
+    trajet.afficher_historique()
+  elif choix == 4:
     print("Au revoir")
     break
   else :
