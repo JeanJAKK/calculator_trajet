@@ -54,4 +54,4 @@ Prix du trajet :    425
 ![Exemple d'utilisation](./image/example.png)
 ![Exemple d'utilisation](./image/exemple1.png)
 
-_JeanJaKK_
+_JeanJAKK_
