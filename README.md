@@ -52,4 +52,4 @@ Prix du trajet :    425
 ### Capture d'écran
 
 ![Exemple d'utilisation](./image/example.png)
-![Exemple d'utilisation](./image/example1.png)
+![Exemple d'utilisation](./image/exemple1.png)
